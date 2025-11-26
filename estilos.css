@@ -1,0 +1,125 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Fondo.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    background-color: #F5D300; /* Amarillo Peanuts */
+    border-bottom: 5px solid black;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+
+/* Navegación */
+nav {
+    background-color: black;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F5D300;
+}
+
+/* Contenedor de página */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* Tarjetas */
+.tarjeta {
+    border: 3px solid black;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
+    transition: .2s;
+}
+
+/* Efecto general de hover */
+.tarjeta:hover {
+    transform: scale(1.02);
+}
+
+/* Imagen dentro de las tarjetas */
+.tarjeta img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* --- EFECTO EXTRA SOLO PARA PROMOCIONES --- */
+.promocion {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.promocion:hover {
+    transform: scale(1.07);          /* Más grande que las demás */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 30%;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #000000;
+}
+
+/* Personajes */
+.personajes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.personajes img {
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* Pie */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
